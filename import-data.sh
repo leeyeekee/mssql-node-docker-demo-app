@@ -5,4 +5,4 @@ sleep 90s
 /opt/mssql-tools/bin/sqlcmd -U sa -P D1toso1234! -d master -i setup.sql
 
 #import the data from the csv file
-/opt/mssql-tools/bin/bcp DemoData.dbo.Products in "/usr/src/app/Products.csv" -c -t',' -U sa -P D1toso1234!
+/opt/mssql-tools/bin/bcp DemoData.dbo.Products in "/usr/src/app/Products.csv" -c -t',' -U sa -P D1toso1234! -S localhost
