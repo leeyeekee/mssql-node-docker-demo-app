@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
     //set up the connection information
     var config = {
         userName: 'sa',
-        password: sapwd, // update me
+        password: 'D1toso1234!', // update me
         server: hname,
         options: {
             database: 'DemoData'
