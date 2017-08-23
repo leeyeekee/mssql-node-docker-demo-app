@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
     var config = {
         userName: 'sa',
         password: sapwd, // update me
-        server: sapwd,
+        server: hname,
         options: {
             database: 'DemoData'
         }
