@@ -2,13 +2,15 @@ var express = require("express");
 var app = express();
 var connection = require('tedious').Connection;
 var request = require('tedious').Request;
+var hname = process.env.HOSTNAME;
+var sapwd = process.env.MSSQL_SA_PASSWORD;
 
 app.get('/', function (req, res) {
     //set up the connection information
     var config = {
         userName: 'sa',
-        password: 'Yukon900', // update me
-        server: 'localhost',
+        password: sapwd, // update me
+        server: sapwd,
         options: {
             database: 'DemoData'
         }
